@@ -21,11 +21,10 @@ Unlike Security Groups, NACLs are stateless, so both inbound and outbound rules 
 - HTTP	80	0.0.0.0/0
 
 Now when you SSH into EC2:
-
-	Step 1: Inbound rule allows:
+ - Step 1: Inbound rule allows:
 	Your Laptop → EC2 : Port 22
 
-	Step 2:
+ - Step 2:
 	- EC2 sends response back to your laptop.
 	- Even if outbound rule is not explicitly configured for that response:
 	- EC2 → Your Laptop
